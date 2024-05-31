@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <img
+          class="navbar-logo"
+          src="./imagenes/logo-musica.jpg"
+          alt="logo"
+        />
+        <div class="navbar-toggle" id="navbar-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar-menu" id="navbar-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Eventos</a></li>
+          <li><a href="#">Artista</a></li>
+        </ul>
+
+        <div class="mobile-menu" id="mobile-menu">
+          <ul class="navbar-menu-mobile">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Eventos</a></li>
+            <li><a href="#">Artista</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container">
+        <h2>Formulario de Inscripción</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="nombre">Nombres:</label>
+                <input type="text" id="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellidos:</label>
+                <input type="text" id="apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="documento">Documento:</label>
+                <input type="text" id="documento" required>
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" required>
+            </div>
+            <div class="form-group">
+                <label for="celular">Celular:</label>
+                <input type="tel" id="celular" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha">Fecha de la Exposición:</label>
+                <input type="date" id="fecha" required>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="../app.js"></script>
+    <script src="./scipt.js"></script>
+</body>
+</html>
